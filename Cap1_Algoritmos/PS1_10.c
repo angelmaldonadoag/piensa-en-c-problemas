@@ -1,16 +1,15 @@
 #include <stdio.h>
 
-/*
-Programa que al recibir como dato un numero de cuatro digitos genera una impresion
-de cada digito.
-*/
+/**	Digitos de un numero.
+*	Programa que al recibir como dato un numero de cuatro digitos genera una
+*	impresion de cada digito. */
 
-int main()
+int main(int argc, char* argv[])
 {
 	int num, dig1, dig2, dig3, dig4;
 
 	printf("Ingrese un numero de 4 digitos: ");
-	scanf("%u", &num);
+	scanf("%d", &num);
 
 	dig4 = num % 10;
 	num /= 10;

@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 
-/*
-Programa que, al recibir como dato el lado de un hexaedro o ccubo, calcule el area de la base,
-el area lateral, el area total y el volumen.
+/**	Areas y volumen de un cubo.
+*	Programa que, al recibir como dato el lado de un hexaedro o cubo, calcula el
+*	area de la base, el area lateral, el area total y el volumen.
+*	Dato: LAD. */
 
-lad: variable de tipo real, que representa el lado del hexahedro.
-*/
-
-int main()
+int main(int argc, char* argv[])
 {
 	float lad;
 	float a_base, a_lateral, a_total, volumen;
@@ -21,10 +19,10 @@ int main()
 	a_total = 6 * a_base;
 	volumen = pow(lad, 3);
 
-	printf("\nArea base: %.2f", a_base);
-	printf("\nArea lateral: %.2f", a_lateral);
-	printf("\nArea total: %.2f", a_total);
-	printf("\nVolumen: %.2f \n", volumen);
+	printf("Area base: %.2f \n", a_base);
+	printf("Area lateral: %.2f \n", a_lateral);
+	printf("Area total: %.2f \n", a_total);
+	printf("Volumen: %.2f \n", volumen);
 
 	return 0;
 }

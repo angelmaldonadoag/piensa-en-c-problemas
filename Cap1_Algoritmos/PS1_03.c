@@ -1,24 +1,24 @@
 #include <stdio.h>
 
-/*  
-Programa que al recibir como datos dos numeros reales, calcula la suma, resta,
-multiplicacion y division de dichos numeros.
-*/
+/** Operaciones basicas.
+*   Programa que al recibir como datos dos numeros reales, calcula la suma,
+*   resta, multiplicacion y division de dichos numeros.
+*   Datos: N1, N2. */
 
-int main()
+int main(int argc, char* argv[])
 {
-    float N1, N2;
+    float n1, n2;
 
     printf("Ingrese el numero 1: ");
-    scanf("%f", &N1);
+    scanf("%f", &n1);
 
     printf("Ingrese el numero 2: ");
-    scanf("%f", &N2);
+    scanf("%f", &n2);
 
-    printf("\n%.2f + %.2f = %.2f", N1, N2, N1 + N2);
-    printf("\n%.2f - %.2f = %.2f", N1, N2, N1 - N2);
-    printf("\n%.2f * %.2f = %.2f", N1, N2, N1 * N2);
-    printf("\n%.2f / %.2f = %.2f\n", N1, N2, N1 / N2);
+    printf("\n%.2f + %.2f = %.2f", n1, n2, n1 + n2);
+    printf("\n%.2f - %.2f = %.2f", n1, n2, n1 - n2);
+    printf("\n%.2f * %.2f = %.2f", n1, n2, n1 * n2);
+    printf("\n%.2f / %.2f = %.2f\n", n1, n2, n1 / n2);
 
     return 0;
 }

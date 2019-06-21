@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-/*
-Programa que, al recibir como datos la distanica recorrida, el numero de minutos, el numero de
-segundos y el numero de centesima, calcula la velocidad de los participantes en kilometros por hora.
-*/
+/**	Conversiones de medidas.
+*	Programa que, al recibir como datos la distanica recorrida, el numero de
+*	minutos, el numero de segundos y el numero de centesimas, calcula la
+*	velocidad de los participantes en kilometros por hora.
+*	Datos: DIS, MIN, SEG, CEN. */
 
-int main()
+int main(int argc, char* argv[])
 {
 	int dis, min, seg, cen;
 	int tse;
@@ -19,13 +20,12 @@ int main()
 
 	// Tiempo expresado en segundos
 	tse = min * 60 + seg + cen / 100;
-	// Velocidad expresada en metros.
+	// Velocidad expresada en metros sobre segundos.
 	vms = (float)dis/tse;
 	// Velocidad expresada en kilometros por hora.
 	vhk = (float)(vms * 3600) / 1000;
 
-	printf("\nK/h: %.2f \n", vhk);
-
-
+	printf("K/h: %.2f \n", vhk);
+	
 	return 0;
 }

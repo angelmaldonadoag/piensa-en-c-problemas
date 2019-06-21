@@ -1,18 +1,16 @@
 #include <stdio.h>
 
+/**	Conversion dolar a peso.
+*	Programa que, al recibir como dato un valor en dolares lo convierte en pesos
+*	Dato: CAN. */
+
 #define DOLAR 12.48
 
-/*
-Programa que, al recibir como dato un valor en dolares lo convierte en pesos.
-
-can: variable de tipo real, que representa la cantidad en dolares).
-*/
-
-int main()
+int main(int argc, char* argv[])
 {
 	float can, pesos;
 
-	printf("\nCantidad en dolares: ");
+	printf("Cantidad en dolares: ");
 	scanf("%f", &can);
 
 	pesos = can * DOLAR;

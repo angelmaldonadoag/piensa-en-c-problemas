@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 
-/*
-Programa que, al recibir como datos las coordenadas de los puntos P1, P2 y P3 que corresponden a 
-los vertices de un triangulo, calcule su superficie.
+/**	Area de un triangulo.
+*	Programa que, al recibir como datos las coordenadas de los puntos P1, P2 y
+*	P3 que corresponden a los vertices de un triangulo, calcula su superficie.
+*	Datos: X1, Y1, X2, Y2, X3, Y3. */
 
-x1, y1, x2, y2, x3, y3: variables de tipo real, que representan las coordenadas de cada punto.
-*/
-
-int main()
+int main(int argc, char* argv[])
 {
 	float x1, y1, x2, y2, x3, y3;
 	float area;
@@ -22,9 +20,9 @@ int main()
 	printf("Ingrese las coordenadas x y del punto 3: ");
 	scanf("%f %f", &x3, &y3);
 
-	area = (float) 1/2 * fabs( x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2) );
+	area = (float)1/2 * fabs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2));
 
-	printf("\nArea del triangulo: %.2f \n", area);
+	printf("Area del triangulo: %.2f \n", area);
 
 	return 0;
 }
