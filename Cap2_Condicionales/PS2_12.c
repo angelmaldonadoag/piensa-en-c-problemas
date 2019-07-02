@@ -2,15 +2,15 @@
 #include <stdbool.h>
 
 /**	¿Todos los dígitos son pares?
-*   Programa que, al recibir como dato un número de 4 dígitos determina si todos
-*   los dígitos del número son pares o no lo son.
-*   Dato: NUM. */
+*	Programa que, al recibir como dato un número de 4 dígitos determina si todos
+*	los dígitos del número son pares o no lo son.
+*	Dato: NUM. */
 
 int main(int argc, char* argv[])
 {
 	int num;
 	int dig, aux;
-    bool son_pares = false;
+	bool son_pares = false;
 
 	printf("Ingrese el numero: ");
 	scanf("%d", &num);

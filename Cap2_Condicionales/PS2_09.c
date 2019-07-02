@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**	Conversión de medidas.
-*   Programa que, al recibir como datos el valor a convertir, la medida en que
-*   está expresada, el nuevo valor y la nueva medida, realiza e imprime el
-*   resultado de la conversión.
-*   Datos: MED, SME y VAL. */
+*	Programa que, al recibir como datos el valor a convertir, la medida en que
+*	está expresada, el nuevo valor y la nueva medida, realiza e imprime el
+*	resultado de la conversión.
+*	Datos: MED, SME y VAL. */
 
 int main(int argc, char* argv[])
 {
