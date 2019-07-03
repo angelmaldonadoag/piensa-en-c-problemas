@@ -3,7 +3,7 @@
 /**	Clasificador de números enteros.
 *	Programa que, al recibir como datos N números enteros, determina cuántos de
 *	ellos son positivos, negativos o nulos.
-*	Datos: N y NUM. */
+*	Datos: N, NUM1, NUM2,...,NUMN */
 
 int main(int argc, char* argv[])
 {
