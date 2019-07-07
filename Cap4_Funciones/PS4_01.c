@@ -14,8 +14,11 @@ int main(int argc, char* argv[])
 	int pares = 0, impares = 0;
 	int sum_pares = 0, sum_impares = 0;
 
-	printf("Ingrese la cantidad de numeros:\t");
-	scanf("%d", &n);
+	do
+	{
+		printf("Ingrese la cantidad de numeros: ");
+		scanf("%d", &n);
+	} while(n < 1 || n > 500);
 
 	for(int i = 1; i <= n; i++)
 	{
