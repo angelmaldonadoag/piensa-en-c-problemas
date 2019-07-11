@@ -14,8 +14,12 @@ int main(int argc, char* argv[])
 {
 	int x;
 
+<<<<<<< HEAD
 	do
 	{
+=======
+	do {
+>>>>>>> 286ca5184593c44ba1237553a4d380cad2e1af0b
 		printf("Ingrese el numero: ");
 		scanf("%d", &x);
 	} while(x < 1);
