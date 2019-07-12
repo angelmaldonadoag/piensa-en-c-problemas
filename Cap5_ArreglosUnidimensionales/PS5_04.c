@@ -1,19 +1,21 @@
 #include <stdio.h>
 
-/** Inserta y elimina elementos.
+/*
+ * Inserta y elimina elementos.
  * Programa que inserta y elimina elementos en un arreglo unidimensional de tipo
- * entero que se encuentra desordenado. Considerar que no se pueden insertar
+ * entero que se encuentra desordenado. Considera que no se pueden insertar
  * elementos repetidos.
- * Datos: VEC[N], ele. (1 <= N <= 100) */
+ * Datos: VEC[N], ele. (1 <= N <= 100)
+ */
 
 const int MAX = 100;
 
-void insertarNum(int*, int*, int);
-int seEncuentra(int*, int, int);
-void eliminarNum(int*, int*, int);
-void imprimirVec(int*, int);
+void insertarNum(int *, int *, int);
+int seEncuentra(int *, int, int);
+void eliminarNum(int *, int *, int);
+void imprimirVec(int *, int);
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int vec[MAX], n = 0, ele;
 	int menu;
@@ -27,43 +29,46 @@ int main(int argc, char* argv[])
 		printf("0. Salir.\n> ");
 		scanf("%d", &menu);
 
-		switch(menu)
+		switch (menu)
 		{
-			case 1:
-				printf("Ingrese el elemento a insertar: ");
-				scanf("%d", &ele);
-				insertarNum(vec, &n, ele);
-				break;
-			case 2:
-				printf("Ingrese el elemento a eliminar: ");
-				scanf("%d", &ele);
-				eliminarNum(vec, &n, ele);
-				break;
-			case 3:
-				imprimirVec(vec, n);
-				break;
-			case 0:
-				printf("\nAdios.\n");
-				break;
-			default:
-				printf("\aError. Opción inválida.\n");
+		case 1:
+			printf("Ingrese el elemento a insertar: ");
+			scanf("%d", &ele);
+			insertarNum(vec, &n, ele);
+			break;
+		case 2:
+			printf("Ingrese el elemento a eliminar: ");
+			scanf("%d", &ele);
+			eliminarNum(vec, &n, ele);
+			break;
+		case 3:
+			imprimirVec(vec, n);
+			break;
+		case 0:
+			printf("\nAdios.\n");
+			break;
+		default:
+			printf("\aError. Opción inválida.\n");
+			break;
 		}
 
-	}	while(menu != 0);
+	} while (menu != 0);
 
 	return 0;
 }
 
-/** Inserta un elemento al arreglo.
- * En caso de de insertar un número el tamaño del arreglo es actualizado. */
+/**
+ * Inserta un elemento al arreglo.
+ * En caso de de insertar un número el tamaño del arreglo es actualizado.
+ */
 void insertarNum(int vector[], int *tam, int num)
 {
-	if(!seEncuentra(vector, *tam, num))
+	if (!seEncuentra(vector, *tam, num))
 	{
 		vector[*tam] = num;
 		*tam += 1;
 	}
-	else if(*tam >= MAX)
+	else if (*tam >= MAX)
 		printf("\aError. Se ha alcanzado el limite de elementos.\n");
 	else
 		printf("\aError. Numero repetido.\n");
@@ -71,13 +76,15 @@ void insertarNum(int vector[], int *tam, int num)
 	printf("\n");
 }
 
-/** Indica si se encuentra o no un número en el arreglo.
- * Si el número se encuentra devuelve su posición (+1) en caso contrario retorna 0. */
+/**
+ * Indica si se encuentra o no un número en el arreglo.
+ * Si el número se encuentra devuelve su posición (+1) en caso contrario retorna 0.
+ */
 int seEncuentra(int vector[], int tam, int buscar)
 {
-	for(int i = 0; i < tam; i++)
+	for (int i = 0; i < tam; i++)
 	{
-		if(vector[i] == buscar)
+		if (vector[i] == buscar)
 			return (i + 1);	// Retorna su posición (empezando en 1).
 	}
 
@@ -91,10 +98,10 @@ void eliminarNum(int vector[], int *tam, int num)
 
 	elemento = seEncuentra(vector, *tam, num);
 
-	if(elemento > 0)
+	if (elemento > 0)
 	{
 		// Desde el numero encontrado hasta el penultimo.
-		for(int i = (elemento - 1); i < (*tam - 1); i++)
+		for (int i = (elemento - 1); i < (*tam - 1); i++)
 		{
 			vector[i] = vector[i + 1];	// Se recorren los números.
 		}
@@ -112,7 +119,7 @@ void imprimirVec(int vector[], int tam)
 {
 	printf("\n");
 
-	for(int i = 0; i < tam; i++)
+	for (int i = 0; i < tam; i++)
 	{
 		printf("vector[%d]: %d\n", i, vector[i]);
 	}
