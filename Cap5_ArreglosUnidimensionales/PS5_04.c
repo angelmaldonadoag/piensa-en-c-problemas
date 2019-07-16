@@ -5,7 +5,7 @@
  * Programa que inserta y elimina elementos en un arreglo unidimensional de tipo
  * entero que se encuentra desordenado. Considera que no se pueden insertar
  * elementos repetidos.
- * Datos: VEC[N], ele. (1 <= N <= 100)
+ * Datos: VEC[N], ELE. (1 <= N <= 100)
  */
 
 const int MAX = 100;
