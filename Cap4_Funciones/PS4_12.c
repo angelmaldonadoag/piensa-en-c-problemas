@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/**	Escribir los resultados que se obtienen al ejecutar el siguiente programa. */
+/** Escribir los resultados que se obtienen al ejecutar el siguiente programa. */
 
 /* Parámetros y funciones. */
 
@@ -10,11 +10,11 @@ int f3(void);
 int f4(void);
 int K = 5;
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int I;
 
-	for(I = 1; I <= 4; I++)
+	for (I = 1; I <= 4; I++)
 	{
 		printf("\nEl resultado de la funcion f1 es: %d", f1());
 		printf("\nEl resultado de la funcion f2 es: %d", f2());

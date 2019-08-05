@@ -1,14 +1,16 @@
 #include <stdio.h>
 
-/**	Número invertido.
-*	Programa que, al recibir como dato un número entero de 4 dígitos, lo imprime
-*	de forma inversa.
-*	Dato: N. */
+/*
+ * Número invertido.
+ * Programa que, al recibir como dato un número entero de 4 dígitos, lo imprime
+ * de forma inversa.
+ * Dato: N.
+ */
 
 int digitos(int);
-void invertir(int);	/* Prototipo de función. */
+void invertir(int);
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int n;
 
@@ -16,7 +18,7 @@ int main(int argc, char* argv[])
 	{
 		printf("Ingrese un numero de 4 digitos: ");
 		scanf("%d", &n);
-	} while( digitos(n) != 4 );
+	} while (digitos(n) != 4);
 
 	printf("\nNumero invertido:\n");
 	invertir(n);
@@ -29,7 +31,7 @@ int digitos(int num)
 {
 	int contador = 0;
 
-	while(num != 0)
+	while (num != 0)
 	{
 		num /= 10;
 		contador++;
@@ -38,12 +40,12 @@ int digitos(int num)
 	return contador;
 }
 
-/*	Función que invierte un número de 4 digitos. */
+/** Función que invierte un número de 4 digitos. */
 void invertir(int n)
 {
 	int digito;
 
-	for(int i = 1; i <= 4; i++)
+	for (int i = 1; i <= 4; i++)
 	{
 		digito = n % 10;
 		printf("%d ", digito);
