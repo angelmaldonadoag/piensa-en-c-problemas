@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
-/**	Promedio de los números pares e impares.
-*	Programa que, al dar como datos N números enteros (1 <= N <= 500), obtiene
-*	el promedio de los números pares e impares.
-*	Datos: N, NUM1, NUM2,...,NUMN */
+/*
+ * Promedio de los números pares e impares.
+ * Programa que, al dar como datos N números enteros (1 <= N <= 500), obtiene el
+ * promedio de los números pares e impares.
+ * Datos: N, NUM1, NUM2,...,NUMN
+ */
 
-void parImpar(int, int *, int *, int *, int *);	/* Prototipo de función. */
+void parImpar(int, int *, int *, int *, int *);	// Prototipo de función.
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int n, num;
 	int pares = 0, impares = 0;
@@ -18,9 +20,9 @@ int main(int argc, char* argv[])
 	{
 		printf("Ingrese la cantidad de numeros: ");
 		scanf("%d", &n);
-	} while(n < 1 || n > 500);
+	} while (n < 1 || n > 500);
 
-	for(int i = 1; i <= n; i++)
+	for (int i = 1; i <= n; i++)
 	{
 		printf("Ingrese el numero %d: ", i);
 		scanf("%d", &num);
@@ -35,10 +37,10 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
-/**	Función que determina si el número pasado es par o impar. */
+/** Función que determina si el número pasado es par o impar. */
 void parImpar(int num, int *pares, int *impares, int *sum_p, int *sum_i)
 {
-	if(pow(-1, num) > 0)	// Par.
+	if (pow(-1, num) > 0)	// Par.
 	{
 		*pares += 1;
 		*sum_p += num;

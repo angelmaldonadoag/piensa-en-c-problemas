@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-/**	Escribir los resultados que se obtienen al ejecutar el siguiente programa. */
+/** Escribir los resultados que se obtienen al ejecutar el siguiente programa. */
 
 /* Funciones y parámetros. */
 
 int a, b, c, d;
 
-int pal(int, int);	/* Prototipo de función. */
+int pal(int, int);							/* Prototipo de función. */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	a = 2;
 	c = 3;
