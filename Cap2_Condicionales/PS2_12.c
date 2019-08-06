@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-/**	¿Todos los dígitos son pares?
-*	Programa que, al recibir como dato un número de 4 dígitos determina si todos
-*	los dígitos del número son pares o no lo son.
-*	Dato: NUM. */
+/*
+ * ¿Todos los dígitos son pares?
+ * Programa que, al recibir como dato un número de 4 dígitos determina si todos
+ * los dígitos del número son pares o no lo son.
+ * Dato: NUM.
+ */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int num;
 	int dig, aux;
@@ -18,28 +20,28 @@ int main(int argc, char* argv[])
 	aux = num;
 	dig = num % 10;
 	num /= 10;
-	if(dig % 2 == 0)  // 4to dígito.
+	if (dig % 2 == 0)  // 4to dígito.
 	{
 		dig = num % 10;
 		num /= 10;
 
-		if(dig % 2 == 0)  // 3er dígito.
+		if (dig % 2 == 0)  // 3er dígito.
 		{
 			dig = num % 10;
 			num /= 10;
 
-			if(dig % 2 == 0)  // 2do dígito.
+			if (dig % 2 == 0)  // 2do dígito.
 			{
 				dig = num % 10;
 				num /= 10;
 
-				if(dig % 2 == 0)  // 1er dígito.
+				if (dig % 2 == 0)  // 1er dígito.
 					son_pares = true;
 			}
 		}
 	}
 
-	if(son_pares)
+	if (son_pares)
 		printf("\nTodos los numeros de %d son pares.\n", aux);
 	else
 		printf("\nNO todos los numeros de %d son pares.\n", aux);
