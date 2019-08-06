@@ -2,7 +2,7 @@
 
 /*	Aplicacion de operadores. */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i = 5, j = 4, k, l, m;
 

@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-/**	Dias a segundos.
-*	Programa que, calcula e imprime el numero de segundos que hay en un
-*	determinado numero de dias.
-*	Dato: DIA. */
+/*
+ * Días a segundos.
+ * Programa que, calcula e imprime el número de segundos que hay en un
+ * determinado número de días.
+ * Dato: DIA.
+ */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	unsigned int dia, segundos;
 

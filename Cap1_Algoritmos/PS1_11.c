@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <math.h>
 
-/**	Areas de un cono.
-*	Programa que, al recibir como datos el radio, la generatriz y la altura de
-*	un cono, calcula e imprime el area de la base, el area lateral, el area
-*	total y su volumen.
-*	Datos: RAD, ALT, GEN. */
+/*
+ * Áreas de un cono.
+ * Programa que, al recibir como datos el radio, la generatriz y la altura de un
+ * cono, calcula e imprime el área de la base, el área lateral, el área total y
+ * su volumen.
+ * Datos: RAD, ALT, GEN. 
+ */
 
 #define M_PI 3.14159265358979323846
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	float rad, alt, gen;
 	float a_base, a_lateral, a_total, volumen;

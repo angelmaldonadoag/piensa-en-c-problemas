@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
-/**	Area y longitud de un circulo.
-*	Programa que al recibir como dato el radio de un circulo, calcula e imprime
-*	tanto su area como la longitud de su circunferencia.
-*	Dato: RAD. */
+/*
+ * Área y longitud de un círculo.
+ * Programa que al recibir como dato el radio de un círculo, calcula e imprime
+ * tanto su área como la longitud de su circunferencia.
+ * Dato: RAD.
+ */
 
 #define M_PI 3.14159265358979323846
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	float rad;
 	float area, circunferencia;

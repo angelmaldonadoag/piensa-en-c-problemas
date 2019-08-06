@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
-/**	Area y volumen de una esfera.
-*	Programa que, al recibir como dato el radio de una esfera, calcula e imprime
-*	el area y su volumen.
-*	Dato: RAD. */
+/*
+ * Área y volumen de una esfera.
+ * Programa que, al recibir como dato el radio de una esfera, calcula e imprime
+ * el área y su volumen.
+ * Dato: RAD.
+ */
 
 #define M_PI 3.14159265358979323846
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	float rad;
 	float area, volumen;

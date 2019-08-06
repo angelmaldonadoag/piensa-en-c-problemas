@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-/**	Operaciones basicas.
-*	Programa que al recibir como datos dos numeros reales, calcula la suma,
-*	resta, multiplicacion y division de dichos numeros.
-*	Datos: N1, N2. */
+/*
+ * Operaciones básicas.
+ * Programa que al recibir como datos dos números reales, calcula la suma,
+ * resta, multiplicación y división de dichos números.
+ * Datos: N1, N2.
+ */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	float n1, n2;
 

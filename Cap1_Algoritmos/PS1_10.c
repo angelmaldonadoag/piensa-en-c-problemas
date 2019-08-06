@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-/**	Digitos de un numero.
-*	Programa que al recibir como dato un numero de cuatro digitos genera una
-*	impresion de cada digito. */
+/*
+ * Dígitos de un número.
+ * Programa que al recibir como dato un número de cuatro dígitos genera una
+ * impresión de cada dígito.
+ */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int num, dig1, dig2, dig3, dig4;
 
